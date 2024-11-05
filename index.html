@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP Workshop - CCC & SATARC</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logos">
+                <img src="/ccc-logo.png" alt="CCC Logo" class="logo">
+                <img src="/satarc-logo.png" alt="SATARC Logo" class="logo">
+            </div>
+            <h1>HTTP Methods Workshop</h1>
+            <p>Learn about HTTP requests with hands-on examples</p>
+        </header>
+
+        <main>
+            <section class="request-section">
+                <h2>Make HTTP Requests</h2>
+                <div class="input-group">
+                    <input type="text" id="messageInput" placeholder="Enter your message">
+                    <div class="button-group">
+                        <button onclick="sendRequest('GET')" class="get">GET</button>
+                        <button onclick="sendRequest('POST')" class="post">POST</button>
+                        <button onclick="sendRequest('PUT')" class="put">PUT</button>
+                        <button onclick="sendRequest('DELETE')" class="delete">DELETE</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="response-section">
+                <h2>Response Log</h2>
+                <div id="responseLog"></div>
+            </section>
+        </main>
+    </div>
+    <script src="/main.js"></script>
+</body>
+</html>
